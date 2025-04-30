@@ -36,7 +36,7 @@ public class LightBoard
       numOn++;
         } 
       }
-    if(lights[rol][col] && numOn % 2 == 0){
+    if(lights[row][col] && numOn % 2 == 0){
    return false;
     }
     if(lights[rol][col] && numOn % 3 == 0){
