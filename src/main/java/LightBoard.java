@@ -16,7 +16,7 @@ public class LightBoard
     {
       for(int c = 0; c < numCols; c++)
         { 
-        double rnd = Math.Random();
+        double rnd = Math.random();
         lights[r][c] = rnd < 0.4;
         }
     }
@@ -28,9 +28,21 @@ public class LightBoard
    */
   public boolean evaluateLight(int row, int col)
   {
-    /* to be implemented in part (b) */
-   
- 
+    int numOn = 0;
+
+    for(int r = 0; r< lights.length; r++)
+      {
+      if(lights[r][col]){
+      numOn++  
+        } 
+      }
+    if(lights[rol][col] && numOn % 2 == 0){
+   return false;
+    }
+    if(lights[rol][col] && numOn % 3 == 0){
+      return true;
+    }
+    return lighbts[row][col];
   }
   public boolean[][] getLights()
   {
