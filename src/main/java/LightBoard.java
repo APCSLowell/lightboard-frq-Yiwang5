@@ -1,4 +1,5 @@
 public class LightBoard
+  
 {
   /** The lights on the board, where true represents on and false represents off.
    */
