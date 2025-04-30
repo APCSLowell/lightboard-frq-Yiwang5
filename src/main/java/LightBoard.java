@@ -13,10 +13,13 @@ public class LightBoard
   {
     lights = new boolean[numRows][numCols];
     for(int r = 0; r < numRows; r++)
+    {
       for(int c = 0; c < numCols; c++)
-        double rnd =Math.Random();
+        { 
+        double rnd = Math.Random();
         lights[r][c] = rnd < 0.4;
-
+        }
+    }
   }
 
   /** Evaluates a light in row index row and column index col and returns a status
